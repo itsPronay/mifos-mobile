@@ -11,7 +11,7 @@ import com.raizlabs.android.dbflow.config.FlowConfig
 import com.raizlabs.android.dbflow.config.FlowManager
 import dagger.hilt.android.HiltAndroidApp
 import org.mifos.mobile.api.local.PreferencesHelper
-import org.mifos.mobile.ui.fragments.applySavedTheme
+import org.mifos.mobile.ui.settings.applySavedTheme
 import org.mifos.mobile.utils.LanguageHelper
 import org.mifos.mobile.utils.LanguageHelper.onAttach
 import java.util.Locale

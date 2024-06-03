@@ -7,7 +7,7 @@ import android.text.TextUtils
 import dagger.hilt.android.qualifiers.ApplicationContext
 import org.mifos.mobile.api.BaseURL
 import org.mifos.mobile.api.SelfServiceInterceptor
-import org.mifos.mobile.ui.fragments.AppTheme
+import org.mifos.mobile.ui.settings.AppTheme
 import javax.inject.Inject
 import javax.inject.Singleton
 
