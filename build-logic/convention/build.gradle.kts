@@ -114,5 +114,19 @@ gradlePlugin {
             implementationClass = "MifosGitHooksConventionPlugin"
             description = "Installs git hooks for the project"
         }
+
+        // KMP & CMP Plugins
+        register("cmpFeature") {
+            id = "mifos.cmp.feature"
+            implementationClass = "CMPFeatureConventionPlugin"
+        }
+        register("kmpKoin") {
+            id = "mifos.kmp.koin"
+            implementationClass = "KMPKoinConventionPlugin"
+        }
+        register("kmpLibrary") {
+            id = "mifos.kmp.library"
+            implementationClass = "KMPLibraryConventionPlugin"
+        }
     }
 }

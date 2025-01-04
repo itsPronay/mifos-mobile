@@ -26,9 +26,15 @@ plugins {
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.detekt) apply false
     alias(libs.plugins.spotless) apply false
+    alias(libs.plugins.ktlint) apply false
+    alias(libs.plugins.version.catalog.linter) apply true
+
+    //Multiplatform Plugins
+    alias(libs.plugins.jetbrainsCompose) apply false
     alias(libs.plugins.compose.compiler) apply false
     alias(libs.plugins.kotlinMultiplatform) apply false
-    alias(libs.plugins.jetbrainsCompose) apply false
+    alias(libs.plugins.wire) apply false
+    alias(libs.plugins.ktorfit) apply false
 }
 
 object DynamicVersion {
