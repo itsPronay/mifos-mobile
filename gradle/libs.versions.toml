@@ -2,7 +2,7 @@
 accompanistVersion = "0.34.0"
 activityVersion = "1.9.3"
 androidDesugarJdkLibs = "2.1.4"
-androidGradlePlugin = "8.7.0"
+androidGradlePlugin = "8.5.0"
 androidTools = "31.7.0"
 androidx-test-ext-junit = "1.2.1"
 androidxActivity = "1.9.3"
@@ -25,7 +25,7 @@ appcompatVersion = "1.7.0"
 cameraCoreVersion = "1.3.4"
 cameraxVersion = "1.4.1"
 compose-material = "1.7.6"
-compose-plugin = "1.6.11"
+compose-plugin = "1.7.0-rc01"
 coreKtx = "1.15.0"
 dependencyGuard = "0.5.0"
 detekt = "1.23.7"
@@ -51,6 +51,7 @@ kotlinxImmutable = "0.3.8"
 kotlinxSerializationJson = "1.8.0-RC"
 ksp = "2.1.0-1.0.29"
 ktlint = "12.1.1"
+ktorfit = "2.2.0"
 libphonenumberAndroidVersion = "8.13.35"
 lifecycleExtensionsVersion = "2.2.0"
 lifecycleLivedataKtxVersion = "2.8.7"
@@ -76,6 +77,7 @@ truth = "1.4.4"
 turbineVersion = "1.1.0"
 twitter-detekt-compose = "0.0.26"
 versionCatalogLinterVersion = "1.0.3"
+wire = "5.0.0"
 zxingVersion = "3.5.3"
 
 [libraries]
@@ -167,7 +169,7 @@ kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-pl
 kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk8", version.ref = "kotlin" }
 kotlinx-collections-immutable = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version.ref = "kotlinxImmutable" }
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
-kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
@@ -220,9 +222,11 @@ kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", versi
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
+ktorfit = { id = "de.jensklingenberg.ktorfit", version.ref = "ktorfit" }
 mifos-android-application = { id = "mifos.android.application", version = "unspecified" }
 mifos-android-application-compose = { id = "mifos.android.application.compose", version = "unspecified" }
 mifos-android-application-firebase = { id = "mifos.android.application.firebase", version = "unspecified" }
+mifos-android-application-flavors = { id = "mifos.android.application.flavors", version = "unspecified" }
 mifos-android-application-jacoco = { id = "mifos.android.application.jacoco", version = "unspecified" }
 mifos-android-feature = { id = "mifos.android.feature", version = "unspecified" }
 mifos-android-hilt = { id = "mifos.android.hilt", version = "unspecified" }
@@ -242,3 +246,4 @@ room = { id = "androidx.room", version.ref = "room" }
 secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotlessVersion" }
 version-catalog-linter = { id = "io.github.pemistahl.version-catalog-linter", version.ref = "versionCatalogLinterVersion" }
+wire = { id = "com.squareup.wire", version.ref = "wire" }
