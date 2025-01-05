@@ -114,6 +114,10 @@ gradlePlugin {
             implementationClass = "MifosGitHooksConventionPlugin"
             description = "Installs git hooks for the project"
         }
+        register("androidFlavors") {
+            id = "mifos.android.application.flavors"
+            implementationClass = "AndroidApplicationFlavorsConventionPlugin"
+        }
 
         // KMP & CMP Plugins
         register("cmpFeature") {

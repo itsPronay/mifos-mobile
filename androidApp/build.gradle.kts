@@ -12,6 +12,7 @@ import org.mifos.mobile.dynamicVersion
 plugins {
     alias(libs.plugins.mifos.android.application)
     alias(libs.plugins.mifos.android.application.compose)
+    alias(libs.plugins.mifos.android.application.flavors)
     alias(libs.plugins.mifos.android.hilt)
     alias(libs.plugins.mifos.android.application.firebase)
     id("com.google.android.gms.oss-licenses-plugin")
@@ -61,10 +62,10 @@ android {
 }
 
 dependencyGuard {
-    configuration("releaseRuntimeClasspath"){
-        modules = true
-        tree = true
-    }
+    configuration("demoDebugRuntimeClasspath")
+    configuration("demoReleaseRuntimeClasspath")
+    configuration("prodDebugRuntimeClasspath")
+    configuration("prodReleaseRuntimeClasspath")
 }
 
 dependencies {
